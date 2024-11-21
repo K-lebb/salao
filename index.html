@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+    <title>Login e Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Card de Login -->
+        <div class="bodyLog">
+            <form class="form">
+                <div class="title">Bem-Vinda(o),<br><span>Faça login para agendar um horário</span></div>
+                <input class="input" name="email" placeholder="Email" type="email">
+                <input class="input" name="password" placeholder="Senha" type="password">
+                <button class="button-confirm" name="log" onclick="consultar()"> Vamos lá!</button>
+            </form>
+        </div>
+
+        <hr style="width: 1px; height: 1000px; background-color: black; border: none;">
+
+        <div class="bodyCad">
+            <form class="form">
+                <div class="title">Bem-Vinda(o),<br><span>Cadastre-se para agendar um horário</span></div>
+                <input class="input" name="name" placeholder="Nome" type="text">
+                <input class="input" name="email" placeholder="Email" type="email">
+                <input class="input" name="password" placeholder="Senha" type="password">
+                <button class="button-confirm" name="cad" onclick="cadastrar()" >Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+    <script src="cads.js"></script>
+</body>
+</html>
